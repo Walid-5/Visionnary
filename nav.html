@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="nav.css">
+
+      <title>Visionary</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <img src="logo agency Visionary black backround.png" class="nav__logo">
+
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Home</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>About Us</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Projects</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Services</span>
+                     </a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#" class="nav__link">
+                        <i class="ri-arrow-right-up-line"></i>
+                        <span>Contact</span>
+                     </a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <div class="nav__social">
+                  <a href="https://www.instagram.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://github.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-github-line"></i>
+                  </a>
+
+                  <a href="https://www.linkedin.com/" target="_blank" class="nav__social-link">
+                     <i class="ri-linkedin-box-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Toggle button -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main>
+        <div class="slogon">
+            <img src="logo agency Visionary white backround.png" class="slogonimg">
+            <h1 class="arabe">اطلق خيالك: صنع أحلام الغد اليوم</h1>
+            <button class="slogonbtn">Let's go</button>
+        </div>
+        <h2 class="section-title" style="text-align: center;">Our Services</h2>
+        <div class="Services">
+            
+        </div>
+    
+        <!-- Image Cards Section -->
+        <div class="image-cards">
+            <div class="image-card">
+                <img src="New post page visionary Secod.png" alt="Image 1">
+                <div class="description">Full managment <button class="see-more">See More</button></div>
+            </div>
+            <div class="image-card">
+                <img src="0645867586.png" alt="Image 2">
+                <div class="description">Consulting<button class="see-more">See More</button></div>
+            </div>
+            <div class="image-card">
+                <img src="First post nchaelah.png" alt="Image 3">
+                <div class="description">Videography and photos <button class="see-more">See More</button></div>
+            </div>
+            <div class="image-card">
+                <img src="Product description 33.png" alt="Image 4">
+                <div class="description">Social media <button class="see-more">See More</button></div>
+            </div>
+            <div class="image-card">
+                <img src="Posts3.png" alt="Image 5">
+                <div class="description">Website or application <button class="see-more">See More</button></div>
+            </div>
+            <div class="image-card5">
+                
+                
+            </div>
+        </div>
+        <div class="Projects">
+            
+        </div>
+      </main>
+
+      <!--=============== MAIN JS ===============-->
+      <script>
+        /*=============== SHOW MENU ===============*/
+const navMenu = document.getElementById('nav-menu'),
+      navToggle = document.getElementById('nav-toggle'),
+      navClose = document.getElementById('nav-close')
+
+/* Menu show */
+if(navToggle){
+   navToggle.addEventListener('click', () =>{
+      navMenu.classList.add('show-menu')
+   })
+}
+
+/* Menu hidden */
+if(navClose){
+   navClose.addEventListener('click', () =>{
+      navMenu.classList.remove('show-menu')
+   })
+}
+// JavaScript to trigger initial animations on page load
+document.addEventListener('DOMContentLoaded', () => {
+            const slogon = document.querySelector('.slogon');
+            const menu = document.querySelector('.menu-ul');
+
+            slogon.classList.add('active');
+            menu.classList.add('active');
+        });
+
+        // JavaScript to trigger image-cards animation on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight * 0.6;
+            const imagecards = document.querySelector('.image-cards');
+            const imagecardsTop = image-cards.offsetTop;
+
+            if (scrollPosition > slogonTop) {
+                image-cards.classList.add('active');
+            } else {
+                image-cards.classList.remove('active');
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            const imagecards = document.querySelector('.image-cards');
+            const menu = document.querySelector('.menu-ul');
+
+            image-cards.classList.add('active');
+            menu.classList.add('active');
+        });
+
+        // JavaScript to trigger image-cards animation on scroll
+        window.addEventListener('scroll', () => {
+            const scrollPosition = window.scrollY + window.innerHeight * 0.6;
+            const imagecards = document.querySelector('.image-cards');
+            const imagecardsTop = image-cards.offsetTop;
+
+            if (scrollPosition > image-cardsTop) {
+                image-cards.classList.add('active');
+            } else {
+                image-cards.classList.remove('active');
+            }
+        });
+      </script>
+      
+   </body>
+</html>
